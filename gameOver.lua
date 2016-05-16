@@ -41,6 +41,9 @@ function scene:create( event )
     restartText:setFillColor(1,1,1)
     sceneGroup:insert(restartText)
     restartButton:addEventListener( "tap", restartButton.tapListener)
+    -- Data (string) to write
+
+file = nil
     --composer.gotoScene( "game" )
 
     -- Initialize the scene here
@@ -61,6 +64,34 @@ function scene:show( event )
         -- Called when the scene is now on screen
         -- Insert code here to make the scene come alive
         -- Example: start timers, begin animation, play audio, etc.
+        local score = event.params.score
+
+        -- Path for the file to write
+        local path = system.pathForFile( "highscore.txt", system.DocumentsDirectory )
+
+        -- Open the file handle
+        local file, errorString = io.open( path, "w+" )
+
+        if not file then
+            -- Error occurred; output the cause
+            print( "File error: " .. errorString )
+        else
+            local contents = file:read( "*a" )
+            print("Score" .. score)
+            if contents == "" then
+                file:write( score )
+            else
+                print( "Contents " .. contents )
+                if (tonumber( contents ) < score) then
+                    -- Write data to file
+                    io.close (file);
+                    file = io.open (path, "w");
+                    file:write( score )
+                end
+            end
+            -- Close the file handle
+            io.close( file )
+        end
     end
 end
 

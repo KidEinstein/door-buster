@@ -189,6 +189,7 @@ function displayDraggableCircle(dot, destination)
                         self.line:removeSelf( )
                         self:removeSelf( )
                         self.group:checkComplete()
+                        audio.play (puzzleLoader.swipeSound )
                     end
             elseif "ended" == phase or "cancelled" == phase then
                 self.x = self.xInit
@@ -301,6 +302,7 @@ function scene:create( event )
     local puzzle = puzzleLoader:loadNextPuzzle()
     displayPuzzle(puzzle, background, patternGroup, dummyDotsGroup, foreground)
     puzzleLoader.tapSound = audio.loadSound( "assets/tap.mp3" )
+    puzzleLoader.swipeSound = audio.loadSound( "assets/swipe.mp3" )
 end
 
 

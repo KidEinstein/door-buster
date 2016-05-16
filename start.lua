@@ -26,6 +26,17 @@ function scene:create( event )
         composer.gotoScene("game")
     end
     sceneGroup:insert(startButton)
+
+    local highScoreButton = display.newRoundedRect( screenCenter.x, screenCenter.y+200, 350, 150 ,20)
+    highScoreButton.tapListener = function(event)
+        composer.gotoScene("highscore")
+    end
+    highScoreButton:setFillColor(0,0,0)
+    sceneGroup:insert(highScoreButton)
+    local highScoreText = display.newText({x=screenCenter.x , y=screenCenter.y +200, text="HIGHSCORE" ,fontSize=50,font=native.systemFontBold})
+    highScoreText:setFillColor(1,1,1)
+    sceneGroup:insert(highScoreText)
+    highScoreButton:addEventListener( "tap", highScoreButton.tapListener)
     local titleText = display.newText({x=screenCenter.x , y=screenCenter.y - 400 , text="WALL BUSTER" ,fontSize=80,font=native.systemFontBold})
     local titleText2 = display.newText({x=screenCenter.x , y=screenCenter.y - 200 , text="Don't crash into the wall !!!" ,fontSize=40,font=native.systemFontBold})
     startButton:setFillColor(0,0,0)
