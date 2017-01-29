@@ -1,5 +1,4 @@
-### App Name
-Wall Buster
+# Wall Buster
 
 ### Description
 This game is a puzzle that has different patterns that the player/user needs to trace on the screen in limited time before the wall crashes into him. There are dots which need to be tapped once and twice and swipes across the screen which are to be traced in a pattern.
