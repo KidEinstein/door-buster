@@ -9,9 +9,9 @@ Each level has a dynamically changing time limit that the wall takes to crash an
 Abdul Rabbani Shah, Anirudh Singh Shekhawat
 
 ### Screenshots
-![Homepage Screenshot](screenshots/home_screenshot.png)
-![Tutorial Screenshot](screenshots/tutorial_screenshot.png)
-![Gameplay Screenshot](screenshots/gameplay_screenshot.png)
+![Homepage Screenshot](screenshots/home_screenshot.png?raw=true "Homepage")
+![Tutorial Screenshot](screenshots/tutorial_screenshot.png?raw=true "Tutorial")
+![Gameplay Screenshot](screenshots/gameplay_screenshot.pn?raw=true "Gameplay")
 
 
 
