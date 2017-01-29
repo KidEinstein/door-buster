@@ -10,9 +10,8 @@ Abdul Rabbani Shah, Anirudh Singh Shekhawat
 
 ### Screenshots
 <img src="screenshots/home_screenshot.png?raw=true" width=250>
-![Homepage Screenshot](screenshots/home_screenshot.png?raw=true "Homepage")
-![Tutorial Screenshot](screenshots/tutorial_screenshot.png?raw=true "Tutorial")
-![Gameplay Screenshot](screenshots/gameplay_screenshot.png?raw=true "Gameplay")
+<img src="screenshots/tutorial_screenshot.png?raw=true" width=250>
+<img src="screenshots/gameplay_screenshot.png?raw=true" width=250>
 
 
 
